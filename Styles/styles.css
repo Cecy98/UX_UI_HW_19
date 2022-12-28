@@ -1,0 +1,193 @@
+/* Styles */
+
+
+body {
+  margin: 0;
+}
+.header {
+  background-color: #032602;
+  padding: 15px;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.logo {
+  display:inline-block;
+  width: 20%;
+  padding: 1%;
+  text-align: center;
+}
+
+.ul {
+  float: right;
+  color: white;
+}
+
+.li_inline-block {
+  display: inline-block;
+  padding: 0px 5px;
+}
+
+nav{
+  display: inline-block;
+}
+header p {
+  display: inline-block;
+  }
+.heroImg {
+    background-color: #EBEBEB;
+    padding: 100px 15px;
+  }
+.me {
+    height: 400px;
+    padding: auto;
+  }
+.content {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #FFFFFF;
+    text-align: center;
+  }
+button {
+    padding: 15px;
+    background-color: #032602;
+    color: white;
+    font-size: 15px;
+    border-radius: 4px;
+  }
+
+ /* MY SKILLS CSS */
+
+.mySkills {
+  display:flex;
+}
+.flexContainer {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width: 33%;
+  margin: 0 auto;
+  padding: auto;
+}
+
+h1 {
+  text-align: center;
+  justify-content: center;
+  }
+h3 {
+max-width: 300px;
+margin: 0 auto;
+padding: 10px;
+text-align: center;
+}
+.p1 {
+max-width: 300px;
+margin: 0 auto;
+padding: 10px;
+text-align: center;
+}
+
+/* MY WORK CSS */
+
+/*   *This is another way to do the grid section instead of the one below*
+.workGrid {
+  display: grid;
+  grid-template-rows: 33% 33% 34%;
+  grid-template-columns: 50% 50% ;
+  justify-content: center;
+  align-content: center;
+}
+*/
+.workGrid{
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "projectTitle projectImage" 
+                       "projectTitle projectImage" 
+                       "projectTitle projectImage";
+}
+.projectTitle{
+  grid-area: projectTitle;
+  border-color: #032602;
+}
+
+h4 {
+  text-align: center;
+}
+p {
+  text-align: center;
+  width: auto;
+}
+button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 25px;
+  margin: auto;
+}
+.projectImage{
+  grid-area: projectImage;
+}
+
+.workGrid{
+  padding: 10px;
+  margin-left: 200px;
+  margin-right: 200px;
+  justify-content: center;
+}
+.opProject{
+  width: 15%;
+  margin-left: 10px;
+}
+.deProject{
+  width: 15%;
+  margin-left: 10px;
+}
+.todoProject{
+  width: 15%;
+  margin-left: 10px;
+}
+
+
+
+ footer {
+    background-color: #032602;
+    padding: 5px;
+    color: white;
+  }
+.footer-ul {
+    list-style: none;
+    padding-left: 5px;
+  }
+.footer-ul li{
+    display: inline-block;
+    padding: 0px 7px;
+  }
+  
+
+/* finish this part up */
+@media screen and (max-width:600px){
+  .flexContainer{
+    display: grid;
+    width: 100%;
+    grid-template-rows:300px 300px 300px ;
+    grid-template-columns: 1fr;
+    grid-template-areas: "URicon" "UIicon"
+    "Webicon";
+  }
+   }
+  
+
+
+
+
+
+
+
+
+
+
