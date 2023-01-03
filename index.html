@@ -7,24 +7,26 @@
     <head>
         <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
 
-        <title> Navigation Bar </title>
+        <title> Cecilia Gutierrez Profile </title>
         <link rel="stylesheet" href="./Styles/styles.css">
-        <link rel="Jquery" href="./js/index.js">
+        <script src="js/index.js">
+        
+        </script>
     </head>
     <body>
         <header class="header"> 
             <div class="inline-block" class="logo" > 
                 <img class="logo" src="./Images/Logo.png" alt="logo">
             </div>
-            <nav class="nav_inline-block" >
+           <nav class="nav_inline-block" > 
                 <ul class="ul">
                     <li class="li_inline-block">About Me</li>
                     <li class="li_inline-block">Projects</li>
                     <li class="li_inline-block">Resume</li>
                     <li class="li_inline-block">Conact Me</li>
                 </ul>
-
             </nav>
         </header>
             <section class="heroImg">
@@ -32,9 +34,11 @@
                     <img class="me" src="./Images/Me.HEIC" alt="My Picture">
                     <h1> Cecilia Gutierrez</h1>
                     <p> This is a little about me...</p>
-                    <button>Download Resume</button>
+                    <button onclick="myFunction()">Download Resume</button>
+                        <p id="downloadResume"></p>
+                        
                 </div>
-            </section>
+            </section> 
             
 <!--  My 'UX Skills' section coded using CSS flex -->
 
